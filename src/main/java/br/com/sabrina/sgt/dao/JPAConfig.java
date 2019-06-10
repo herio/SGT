@@ -65,6 +65,11 @@ public class JPAConfig {
 		properties.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
 		properties.put("hibernate.format_sql", env.getProperty("hibernate.format_sql"));
 		properties.put("hibernate.id.new_generator_mappings", env.getProperty("hibernate.id.new_generator_mappings"));
+		
+		properties.put("spring.jpa.generate-ddl", env.getProperty("spring.jpa.generate-ddl"));
+		properties.put("spring.jpa.hibernate.ddl-auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));
+		properties.put("spring.jpa.hibernate.naming.physical-strategy", env.getProperty("spring.jpa.hibernate.naming.physical-strategy"));
+	
 		return properties;
 	}
 }
