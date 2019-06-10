@@ -1,1 +1,1 @@
-web: -Dspring.profiles.active=prod -jar target/sgt-0.0.1-SNAPSHOT.jar
+web: java -Dspring.profiles.active=prod -jar target/sgt-0.0.1-SNAPSHOT.jar
